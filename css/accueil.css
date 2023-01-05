@@ -1,10 +1,27 @@
 @import url("fonts.css");
 
+#home-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*-------------------------------------
+            LEFT CONTENT
+-------------------------------------*/
+
+.home-texts {
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
 #home-subtitle {
     color: #4497f4;
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
+    opacity: 0.6;
 }
 
 #home-title {
@@ -16,6 +33,105 @@
     margin-bottom: 100px;
 }
 
-.home-texts {
-    margin: 25px;
+.button-icon {
+    position: absolute;
+    width: 16px;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.home-button:hover .button-icon {
+    position: absolute;
+    width: 16px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.button-icon-hover {
+    position: absolute;
+    width: 16px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.home-button:hover .button-icon-hover {
+    position: absolute;
+    width: 16px;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.home-button {
+    margin-right: 20px; 
+    border: rgba(68, 151, 244, 0.4) solid 3px;
+    border-radius: 5px;
+    color: rgba(68, 151, 244, 1);
+    text-decoration: none;
+    padding: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.home-button:hover {
+    margin-right: 20px; 
+    border: rgba(68, 151, 244, 0.4) solid 3px;
+    border-radius: 5px;
+    background-color: rgba(68, 151, 244, 1);
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/*-------------------------------------
+            RIGHT CONTENT
+-------------------------------------*/
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(5%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes wait {
+    0% {
+    }
+    100% {
+    }
+}
+
+.home-mockups {
+    display: flex;
+    width: 50%;
+    overflow: hidden;
+    animation: 0.5s ease-out 0s 1 slideInFromLeft;
+}
+
+.mockup {
+    width: 70%;
+    position: relative;
+}
+
+#first.mockup {
+   
+}
+
+#second.mockup {
+    left: -40%;
+}
+
+#third.mockup {
+    left: -80%;
+}
+
+@media (max-width: 1060px) {
+    .home-mockups {
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 10%;
+    }
 }

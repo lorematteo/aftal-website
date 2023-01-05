@@ -1,0 +1,21 @@
+@import url("fonts.css");
+
+#home-subtitle {
+    color: #4497f4;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#home-title {
+    font-family: "montserrat-regular", sans-serif;
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 1.5;
+    color: #4497f4;
+    margin-bottom: 100px;
+}
+
+.home-texts {
+    margin: 25px;
+}

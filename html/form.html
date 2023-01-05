@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="icon" href="../images/favicon.png">
+    <title>Aftal</title>
+</head>
+<body>
+    <header class="main-head">
+
+        <div class="header-logo">
+	        <a href="index.html"><img src="../images/logo.png"></a>
+	    </div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="biblio.html">Bibliothèque</a></li>
+                <li><a href="musiciens.html">Musiciens</a></li>
+                <li><a class="current" href="form.html">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="login">
+        <div class="signin">
+            <p>
+                <input type="text" name="id" id="id" placeholder="Nom d'utilisateur ou Email">
+            <p>
+                <input type="password" name="pwd" id="pwd" placeholder="Mot de passe">
+            </p>
+            <p>
+                <input type="button" value="Se connecter">
+            </p>
+        </div>
+        <div class="signup">
+            Vous n'aves pas encore de compte ?<br>
+            <span><a href="#" id="account">S'inscrire</a></span>
+            <div class="create_account">
+                <form class="create" name="myform">
+                    <p>Votre nom : <input type="text" name="name" id="name"></p>
+                    <p>Votre prénom : <input type="text" name="fname" id="fname"></p>
+                    <p>Votre age : <input type="number" name="age" id="age"></p>
+                    <p>Mot de passe : <input type="password" name="password" id="password"></p>
+                    <p>
+                        Instrument(s) de musique dont vous jouez :
+                        <select name="instrus" id="ins">
+                            <option value="guitare">guitare</option>
+                            <option value="batterie">batterie</option>
+                            <option value="contrebasse">contrebasse</option>
+                            <option value="harmonica">harmonica</option>
+                            <option value="piano">piano</option>
+                            <option value="flûte">flûte</option>
+                        </select>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-foot">
+        <section id="contacts">
+            <div id="footer-text">
+                <p>Si vous souhaitez en connaitre plus sur nous,veuillez vous rediriger sur la page <a href="propos.html">À Propos</a>.</p>
+            </div>
+
+            <div class="icons">
+                <ul>
+                    <li><a href="https://facebook.com/"><img class="social-icon" src="../images/social-icons/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://instagram.com"><img class="social-icon" src="../images/social-icons/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://twitter.com"><img class="social-icon" src="../images/social-icons/twitter.png" alt="Twitter"></a></li>
+                    <li><a href="https://youtube.com"><img class="social-icon" src="../images/social-icons/youtube.png" alt="Youtube"></a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
+</body>
+</html>

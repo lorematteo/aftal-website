@@ -58,15 +58,19 @@ article .subtitle {
     text-align: right;
 }
 
-.proof a {
+.proof {
     color: #224C7A;
     opacity: 0.3;
+}
+
+.proof a {
+    color: inherit;
     transition: all 0.15s ease-in-out;
 }
 
 .proof a:hover {
     color: #224C7A;
-    opacity: 0.6;
+    opacity: 0.7;
     transition: all 0.15s ease-in-out;
 }
 

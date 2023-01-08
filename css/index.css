@@ -98,13 +98,6 @@
     }
 }
 
-@keyframes wait {
-    0% {
-    }
-    100% {
-    }
-}
-
 .home-mockups {
     display: flex;
     width: 50%;

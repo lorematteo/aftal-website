@@ -1,18 +1,119 @@
-
-#container {
-    margin-top: 10vh;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    width: 50%;
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 2em;
-    box-shadow:  10px 10px rgb(0,0,75);
+#content {
+    margin: 5%;
 }
 
-#content {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: 2px;
-    text-shadow: 2px 5px 5px 2px;
+#content-titles {
+    margin: 10% 0 6% 0;
+}
+
+#content-titles h1 {
+    font-family: "montserrat-regular", sans-serif;
+    font-size: 45px;
+    letter-spacing: -1px;
+    color: #4497f4;
+    margin: 0px;
+}
+
+#content-titles h3 {
+    color: #4497f4;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    opacity: 0.6;
+}
+
+article {
+    margin: 5% 0% 5% 5%;
+}
+
+article h2 {
+    color: #224C7A;
+    margin: 0px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+article {
+    color: #224C7A;
+    font-size: large;
+}
+
+/*-------------------------------------
+            ATTENDUS
+-------------------------------------*/
+
+#attendus ul li{
+    padding: 5px;
+}
+
+article .subtitle {
+    font-weight: 600;
+}
+
+#attendus .nb {
+    opacity: 0.6;
+    font-size: 15px;
+    text-transform: lowercase;
+}
+
+/*-------------------------------------
+            BAREME
+-------------------------------------*/
+
+#bareme h2 {
+    margin: 0px;
+}
+
+#bareme ul li {
+    margin: 15px 0px;
+}
+
+#bareme ul li p {
+    margin: 0px;
+}
+
+#bareme .points {
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+#bareme .proof {
+    right: 0px;
+    text-align: right;
+}
+
+.proof a {
+    color: #224C7A;
+    opacity: 0.3;
+    transition: all 0.15s ease-in-out;
+}
+
+.proof a:hover {
+    color: #224C7A;
+    opacity: 0.6;
+    transition: all 0.15s ease-in-out;
+}
+
+#bareme .nelgie {
+    text-transform: uppercase;
+    color: #20a39e;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-size: 14px;
+}
+
+#bareme .matteo {
+    text-transform: uppercase;
+    color: #ef5b5b;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-size: 14px;
+}
+
+#bareme .paul-loup {
+    text-transform: uppercase;
+    color: #ffba49;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-size: 14px;
 }

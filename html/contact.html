@@ -26,44 +26,32 @@
         </nav>
     </header>
 
-    <div class="login">
-        <div class="signin">
-            <p>
-                <input type="text" name="id" id="id" placeholder="Nom d'utilisateur ou Email">
-            <p>
-                <input type="password" name="pwd" id="pwd" placeholder="Mot de passe">
-            </p>
-            <p>
-                <input type="button" value="Se connecter">
-            </p>
-        </div>
-        <div class="signup">
-            Vous n'aves pas encore de compte ?<br>
-            <span><a href="#" id="account">S'inscrire</a></span>
-            <div class="create_account">
-                <form class="create" name="myform">
-                    <p>Votre nom : <input type="text" name="name" id="name"></p>
-                    <p>Votre prénom : <input type="text" name="fname" id="fname"></p>
-                    <p>Votre age : <input type="number" name="age" id="age"></p>
-                    <p>Mot de passe : <input type="password" name="password" id="password"></p>
-                    <p>
-                        Instrument(s) de musique dont vous jouez :
-                        <select name="instrus" id="ins">
-                            <option value="guitare">guitare</option>
-                            <option value="batterie">batterie</option>
-                            <option value="contrebasse">contrebasse</option>
-                            <option value="harmonica">harmonica</option>
-                            <option value="piano">piano</option>
-                            <option value="flûte">flûte</option>
-                        </select>
-                    </p>
-                </form>
-            </div>
-        </div>
-    </div>
+    <section id="content">
 
-    <section>
-        <h1>Contact</h1>
+        <div id="content-titles">
+            <h1>Formulaire de contact :</h1>
+            <h3>Une question, une remarque, un bug ? N'hésitez pas à nous contacter !</h3>
+        </div>
+
+        <article class="container">
+            <form>
+              <label for="name">Nom & prénom</label>
+              <input type="text" id="name" name="name" placeholder="Votre nom et prénom">
+          
+              <label for="sujet">Sujet</label>
+              <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
+          
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" placeholder="Votre email">
+          
+          
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Votre message"></textarea>
+          
+              <input type="submit" value="Envoyer">
+            </form>
+        </article>
+
     </section>
 
     <footer class="main-foot">

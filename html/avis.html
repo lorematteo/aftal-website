@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/avis.css">
+    <link rel="icon" href="../images/favicon.png">
+    <script language="JavaScript" type="text/javascript" src="../js/avis.js"></script>
+    <title>Aftal</title>
+</head>
+<body>
+    <header class="main-head">
+
+        <div class="header-logo">
+	        <a href="index.html"><img src="../images/logo.png"></a>
+	    </div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a class="current" href="avis.html">Avis</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="download.html">Télécharger l'Application</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="content">
+
+        <div id="content-titles">
+            <h1>Avis des utilisateurs :</h1>
+            <h3>Que pensez vous de l'application ? N'hésitez pas à nous le faire savoir !</h3>
+        </div>
+
+        <article>
+            <ul class="reviews">
+                <li>
+                    <p>“</p>
+                    <p>J’ai été très satisfait de cette application pour l’avoir utilisé pendant un certain temps avec un abonnement premium. Bien entendu, on retrouve tout profil comme j’imagine sur d’autres sites. Mais j’ai pu faire de jolies rencontres avec des personnes très sérieuses.</p>
+                    <p>~ Mattéo Lo Re</p>
+                </li>
+
+                <li>
+                    <p>“</p>
+                    <p>Une interface plaisante et intuitive et de nombreux profils qui conviennent à chacun, ce n’est pas pour rien que c’est l’application de mise en relation la plus connue.</p>
+                    <p>~ Mattéo Lo Re</p>
+                </li>
+
+                <li>
+                    <p>“</p>
+                    <p>Je n'ai pas l'application depuis longtemps mais jusqu'ici j'en suis plutôt satisfait. Mon expérience a été agréable jusqu'ici et l'interface est agréable et compréhensible, même si je suis un peu triste qu'il n'y ai pas d'affichage mode sombre/mode nuit. Bonne continuation!</p>
+                    <p>~ Mehdi Bakhtar</p>
+                </li>
+
+                <li>
+                    <p>“</p>
+                    <p>C'est un presque parfait : l'application est assez intuitive, tout se trouve assez facilement. Quelque petits défauts d'interface à noter pour accéder à la description du profil, slider vers le haut est parfois laborieux.</p>
+                    <p>~ Mattéo Lo Re</p>
+                </li>
+
+                <li>
+                    <p>“</p>
+                    <p>Je l'utilise depuis peu et honnêtement c'est une bonne application de mise en relation ! Le système de smiley pour savoir quel type de relation on cherche est vraiment une bonne idée qui évite les pertes de temps 😊 je trouve ça juste dommage qu'il faut payer pour voir qui nous swipe. Mais dans l'ensemble, c'est une application que je vous conseille 😊</p>
+                    <p>~ Erésis</p>
+                </li>
+            </ul>
+
+            <p id="laisseravis">Envie de partagez votre avis ? Entrez vos informations et laissez votre message, il sera retransmis en direct.</p>
+
+            <form method="post" name="newReview" onsubmit="this.reset(); return false">
+                <div>
+                    <p>Nom & Prénom</p>
+                    <input type="text" id="name" name="name" placeholder = "Votre nom et prénom">
+                </div>
+                
+                <div>
+                    <p>Avis</p>
+                    <input type="text" id="avis" name="avis" placeholder = "Votre avis" required>
+                </div>
+                
+                <input type="submit" onclick="ajouter()"  value="Envoyer">
+            </form>
+        </article>
+
+    </section>
+
+    <footer class="main-foot">
+        <section id="contacts">
+            <div id="footer-text">
+                <p>Si vous souhaitez en connaitre plus sur nous,veuillez vous rediriger sur la page <a href="propos.html">À Propos</a>.</p>
+            </div>
+
+            <div class="icons">
+                <ul>
+                    <li><a href="https://facebook.com/"><img class="social-icon" src="../images/social-icons/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://instagram.com"><img class="social-icon" src="../images/social-icons/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://twitter.com"><img class="social-icon" src="../images/social-icons/twitter.png" alt="Twitter"></a></li>
+                    <li><a href="https://youtube.com"><img class="social-icon" src="../images/social-icons/youtube.png" alt="Youtube"></a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
+</body>
+</html>

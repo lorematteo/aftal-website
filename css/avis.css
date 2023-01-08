@@ -1,0 +1,107 @@
+article form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article form div p {
+    width: 175px;
+}
+
+article form div input {
+    display: block;
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    background-color: #4497f4;
+    color: white;
+    padding: 15px 25px;
+    margin: 30px 0px;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+}
+  
+input[type=submit]:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+#laisseravis {
+    color: #224C7A;
+    font-weight: 600;
+}
+
+/*-------------------------------------
+            REVIEWS BUBBLE
+-------------------------------------*/
+
+.reviews {
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 150px;
+}
+
+.reviews li {
+    width: 50%;
+    background-color: rgba(68, 151, 244, 0.1);
+    border-radius: 15px;
+    padding: 40px 3% 25px 3%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.reviews li p {
+    margin: 0px;
+}
+.reviews li p:first-child {
+    font-family: Georgia;
+	font-size: 40px;
+    line-height: 0;
+    text-align: left;
+}
+
+.reviews li p:last-child {
+    width: 100%;
+    text-align: right;
+}
+
+/* Choosing bubble side */
+.reviews li:nth-child(2n) {
+    margin-left: auto;
+    border-right: solid 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.reviews li:nth-child(2n+1) {
+    border-left: solid 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+/* Choosing bubble border color */
+
+.reviews li:nth-child(4n+1) {
+    border-color: #56b273;
+}
+
+.reviews li:nth-child(4n+2) {
+    border-color: #b388dd;
+}
+
+.reviews li:nth-child(4n+3) {
+    border-color: #ff8750;
+}
+
+.reviews li:nth-child(4n+4) {
+    border-color: #01AD9B;
+}

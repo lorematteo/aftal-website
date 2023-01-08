@@ -1,0 +1,49 @@
+.download-badges {
+    width: 350px;
+    display: flex;
+    list-style-type: none;
+    padding-left: 0px;
+    justify-content: left;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.download-badges li img {
+    width: 100%;
+    margin: 0px;
+    opacity: 1;
+}
+
+.download-badges li img:hover {
+    width: 100%;
+    margin: 0px;
+    opacity: 0.8;
+}
+
+#carousel {
+    display: flex;
+    overflow-x: auto;
+    width: 95%;
+    height: fit-content;
+    border: solid #F3E6FF .5px;
+    padding: 15px;
+    padding-right: 5px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#carousel::-webkit-scrollbar {
+    display: none;
+}
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+#carousel {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.item {
+    min-width: 300px;
+    min-height: 20vh;
+    margin-right: 10px;
+    border-radius: 7px;
+}

@@ -83,6 +83,15 @@ body {
 .social-icon {
     display: block;
     width: 32px;
+    opacity: 0.6;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    display: block;
+    width: 32px;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
 }
 
 #footer-text {
@@ -90,8 +99,14 @@ body {
     transition: 1s;
     transition-property:initial;
     padding: 10px;
+    color: rgba(255, 255, 255, 0.7);
 }
 
-#footer-text a:visited {
-    color: inherit;
+#footer-text p a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+#footer-text p a {
+    color: rgba(255, 255, 255, 0.7);
+
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/biblio.css">
     <link rel="icon" href="../images/favicon.png">
+    <script src="../js/biblio.js"></script>
     <title>Aftal</title>
 </head>
 <body>
@@ -21,24 +22,39 @@
                 <li><a href="index.html">Accueil</a></li>
                 <li><a class="current" href="biblio.html">Bibliothèque</a></li>
                 <li><a href="musiciens.html">Musiciens</a></li>
-                <li><a href="form.html">Connexion</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
-        <table id="librairies">
-            <tr>
-                <th>Nom</th>
-                <th></th>
-                <th></th>
-            </tr>
-        </table>
-        <div>
-            <ul class="download-badges">
-                <li><a href="https://appstore.com/"><img src="../images/appstore.png" alt="App Store"></a></li>
-                <li><a href="https://googleplay.com"><img src="../images/google-play.png" alt="Google Play"></a></li>
-            </ul>
+        <div id="add_musician">
+            <h2>Ajouter vos musiciens ou chanteurs connus</h2>
+            <form action="#" class="musician">
+                <p>
+                    Nom : <input type="text" name="name" id="name" required>
+                </p>
+                <p>
+                    Prénom : <input type="text" name="fname" id="fname" required>
+                </p>
+                <p>
+                    Vos instruments ? : <br><textarea name="instrus" id="instrus" cols="20" rows="5"></textarea>
+                </p>
+                <button onclick="addMusician()">Ajouter un musicien</button>
+            </form>
+        </div>
+        <div id="tabmusicians">
+            <table id="librairies">
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Style(s) de musique(s) préféré(s)</th>
+                    </tr>
+                </thead>
+            </table>
+
+            <span id="result">Vous avez 0 musiciens ajouté(s)</span>
         </div>
     </div>
 

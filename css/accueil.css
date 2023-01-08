@@ -12,7 +12,7 @@
 -------------------------------------*/
 
 .home-texts {
-    padding-left: 10%;
+    padding-left: 8%;
     padding-top: 10%;
 }
 
@@ -62,7 +62,6 @@
 }
 
 .home-button {
-    margin-right: 20px; 
     border: rgba(68, 151, 244, 0.4) solid 3px;
     border-radius: 5px;
     color: rgba(68, 151, 244, 1);
@@ -71,8 +70,11 @@
     transition: all 0.5s ease-in-out;
 }
 
+#first-button.home-button {
+    margin-right: 20px;
+}
+
 .home-button:hover {
-    margin-right: 20px; 
     border: rgba(68, 151, 244, 0.4) solid 3px;
     border-radius: 5px;
     background-color: rgba(68, 151, 244, 1);
@@ -123,7 +125,7 @@
     left: -80%;
 }
 
-@media (max-width: 1060px) {
+@media (max-width: 1100px) {
     .home-mockups {
         display: flex;
         width: 100%;

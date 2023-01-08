@@ -1,13 +1,68 @@
-.download-badges {
-    width: 25%;
+.container {
     display: flex;
-    list-style-type: none;
-    padding-left: 0px;
-    justify-content: left;
-    gap: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left : auto;
+    margin-right : auto;
+    padding-top: 5vh;
 }
 
-.download-badges li img {
-    width: 100%;
-    margin: 10px;
+/*
+  Toutes les infos d'un musicien ou chanteur seront précisés
+  dans un formulaire à remplir et ajouter dans le tableau 
+  ci-dessous
+*/
+#add_musician {
+    text-align: left;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: rgb(9, 249, 169);
+    width: 75%;
+    height: 75%;
+    margin: auto;
+    border-radius: 2em;
+    box-shadow: 3px 3px 2px wheat;
+    padding : 2em;
 }
+
+#add_musician .musician input {
+    box-shadow: 2px 2px rgb(12, 249, 0);
+}
+
+#add_musician .musician textarea {
+    resize: none;
+}
+
+#add_musician .musician button {
+    border-radius: 1.5em;
+    width: 175px;
+}
+
+/*
+  On créé un tableau si un utilisateur souhaite ajouter ces musiciens
+  dans sa liste favori
+*/
+#tabmusicians {
+    padding-top : 5vh;
+    padding: 1em;
+}
+
+#librairies {
+    border-collapse: collapse;
+    margin: auto;
+    width: 75%;
+}
+
+#librairies thead {
+    background-color: rgb(18, 156, 202);
+}
+#librairies tr th, #librairies tr td{
+    border: 2px ridge rgb(67, 59, 59);
+    text-align: center;
+}
+
+#tabmusicians #result{
+    text-align: center;
+    visibility: visible;
+}
+
